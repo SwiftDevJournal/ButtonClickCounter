@@ -14,6 +14,8 @@ class ViewController: NSViewController {
     @IBOutlet var button: NSButton!
     @IBOutlet var clicksLabel: NSTextField!
     
+    var clicks = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,7 +29,16 @@ class ViewController: NSViewController {
     }
 
     @IBAction func handleButtonClick(_ sender: Any) {
+        incrementClicks()
+        updateClicksLabel()
     }
     
+    func incrementClicks() {
+        clicks += 1
+    }
+    
+    func updateClicksLabel() {
+        clicksLabel.stringValue = clicks.description
+    }
 }
 
