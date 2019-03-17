@@ -1,3 +1,4 @@
+
 //
 //  ViewController.swift
 //  ButtonClickCounter
@@ -10,6 +11,9 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet var button: NSButton!
+    @IBOutlet var clicksLabel: NSTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +26,8 @@ class ViewController: NSViewController {
         }
     }
 
-
+    @IBAction func handleButtonClick(_ sender: Any) {
+    }
+    
 }
 
