@@ -741,7 +741,6 @@
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="button" destination="SoD-zX-6p9" id="K8e-DX-hqi"/>
                         <outlet property="clicksLabel" destination="boi-aQ-8JJ" id="1kV-Li-99Q"/>
                     </connections>
                 </viewController>
