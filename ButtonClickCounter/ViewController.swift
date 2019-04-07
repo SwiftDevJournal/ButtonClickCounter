@@ -11,7 +11,6 @@ import Cocoa
 
 class ViewController: NSViewController {
 
-    @IBOutlet var button: NSButton!
     @IBOutlet var clicksLabel: NSTextField!
     
     var clicks = 0
